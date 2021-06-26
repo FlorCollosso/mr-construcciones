@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+  background-color: #dddcd5;
+  color: #000;
+  font-family: Helvetica;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 0.09fr;
+ }
+
+main {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+}
+
+ li {
+  list-style: none;
+  position: relative;
+ }
+
+ a {
+  text-decoration: none;
+  color: #fff;
+ }
+
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 58% auto;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(238, 238, 238);
+  height: 4vw;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Navegador Buscador */
+
+.LogoTop {
+  padding-left: 11.7vw;
+  height: 5vw;
+  margin-top: 0.8vw;
+}
+
+.LogoTop img {
+  width: 12vw;
+}
+
+.MenuNavTop {
+  width: 70%;
+  justify-content: space-between;
+}
+
+.ContainerNav {
+  float: left;
+  text-align: center;
+}
+
+.ContainerNav ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 100%;
+}
+
+.ContainerNav li {
+  margin: 0 .8vw;
+  float: left;
+  height: 4vw;
+  position: relative;
+}
+
+.InicioSelected:before {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #18bc9c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.5rem;
+}
+
+.MenuNavTop .TextInicioSelected {
+  color: #18bc9c;
+}
+
+.ContainerNav ul ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .6s;
+  position:absolute;
+  right:auto;
+}
+
+.ContainerNav ul li a {
+  display:block;
+  padding-top: 1vw;
+  font-size:1em;
+  line-height:1em;
+  text-decoration:none;
+  color: #373232;
+  font-weight:normal;
+  border-bottom:1px;
+  letter-spacing: 0.5pt;
+  position: relative;
+  top: 1vw;
+}
+
+.ContainerNav ul ul li {
+  left:auto;
+  margin:0;
+  clear:left;
+  width: auto;
+  padding: 0;
+  height: auto;
+}
+
+.ContainerNav li:hover a {
+  color:#18bc9c;
+  transition: all .3s;
+}
+
+#SubmenuTop li {
+  background: rgba(238, 238, 238, 0.9);
+  position: relative;
+  top: 2.1vw;
+  width: 6.5vw;
+  right: 1.35vw;
+}
+
+#SubmenuTop li:before {
+  width: 0;
+  height: 0;
+}
+
+
+#SubmenuTop a {
+  color: #252529;
+  font-size: 13px;
+  padding: .9vw 0;
+  top:0;
+}
+
+.ContainerNav li:hover #SubmenuTop {
+  visibility: visible;
+  opacity: 1;
+  width: 30%;
+}
+
+#SubmenuTop li:hover a {
+  background: rgb(207, 207, 207);
+}
+
+/* Buscador */
+
+#ctn-icon-search {
+position: absolute;
+right: 12vw;
+top: 1.9vw;
+height: 100%
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#ctn-icon-search i {
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#ctn-icon-search i:hover {
+  color: #18bc9c;
+}
+
+#ctn-bars-search {
+  background: rgba(238, 238, 238);
+  position: fixed;
+  top: -9vw;
+  width: 100%;
+  z-index: 1;
+  padding-top: .8vw;
+  transition: all 800ms;
+}
+
+#ctn-bars-search a {
+  color: #252529;
+}
+
+#ctn-bars-search input {
+  display: block;
+  width: 75vw;
+  margin: 10px auto;
+  padding: 0.5vw;
+  font-size: 15px;
+  outline: 0;
+  border-color: #bbbb;
+  border-width: thin;
+  border-style: solid;
+}
+
+#BoxSearch {
+  position: fixed;
+  background: rgba(238, 238, 238);
+  width: 76.7%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+#BoxSearch li a {
+  display: block;
+  color: #777777;
+  padding: 11px 20px;
+}
+
+#BoxSearch li:hover  {
+  background-color: rgba(220, 220, 220);
+}
+
+#BoxSearch li a i {
+  margin-right: 10px;
+  color: #777777;
+}
+
+#ctn-cover-search {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 4vw;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: none;
+
+}
+
+/* Redes */
+
+.ContainerSoc {
+  text-align: center;
+  font-size: 20px;
+}
+
+.SocialBar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 40vw;
+  right:0;
+  align-items: flex-end;
+}
+
+.icon {
+  background: white;
+  text-decoration: none;
+  padding: .7rem;
+  transition: all .5s;
+  height: 1vw;
+  padding: 0.8rem;
+}
+
+.icon-facebook{
+  background: #2e406e;
+}
+
+.icon-instagram{
+  background: #e03a69;
+}
+
+
+.icon-whatsapp{
+  background: #4adf83;
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+.icon:hover {
+  padding-right: 2rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+/* Portada */
+
+.Cuerpo {
+  position: relative;
+  bottom: 8.5vw;
+  top: 4vw;
+  height: 80%;
+  z-index: -3;
+}
+
+.Slider {
+overflow: hidden;
+background-size: cover;
+background-repeat: repeat;
+height: 40vw;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Slider li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.Slider ul {
+display: flex;
+width: 300%;
+animation: cambio 20s infinite alternate;
+animation-timing-function: ease-in;
+}
+
+.Slider li {
+  width: 100%;
+  height: 800px;
+}
+
+.Slider li img {
+  width: 100%;
+  height: 900px;
+}
+
+.InfoSlider {
+  margin: auto;
+  top: 15vw;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.Slider h2{
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: lighter;
+  overflow: hidden;
+  letter-spacing: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-25px);
+}
+
+.Slider h1 {
+  color: #fff;
+  font-size: 5rem;
+  height: 100%;
+  width: 100%;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Slider h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+
+.Slider img {
+  height: 62vw;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  35%{margin-left: 0;}
+
+  40%{margin-left: -100%;}
+  65%{margin-left: -100%;}
+
+  70%{margin-left: -200%;}
+  100%{margin-left: -200%;}
+}
+
+/* Por qué elegirnos*/
+
+.ContainerPuntosFuertes {
+  background: linear-gradient( white 50%, #dddcd5 50%);
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  width: 80%;
+  margin-left: 8vw;
+  height: 45vw;
+}
+
+.ContainerPuntosFuertes hr {
+  width: 10vw;
+  height: 2px;
+  background: #18bc9c;
+  border-color: #18bc9c;
+  margin-left: 43.7%;
+  margin-top: 2vw;
+  border-radius: 100%;
+}
+
+.ContainerPuntosFuertes h1 {
+  font-size: 1.2em;
+  color: #95a5a6;
+  padding: 15px;
+  margin-top: 2.5vw;
+}
+
+.ContainerPuntosFuertes h2 {
+  font-size: 1.4em;
+  margin-bottom: 1vw;
+}
+
+.ContainerValores {
+  display: flex;
+  margin-bottom: 1vw;
+}
+
+.ContainerValores img {
+  width: 12vw;
+  padding-top: 1vw;
+  margin-top: 5vw;
+}
+
+.ContainerValores div {
+  margin: 0 0.5vw;
+  font-size: 10px;
+  width: 25%;
+}
+
+.ContainerValores div div {
+  width: 100%;
+  margin: 0;
+
+}
+
+.ContainerValores h1 {
+ font-size: 20px;
+ color: #18bc9c;
+ padding: 0vw 1vw;
+
+}
+
+.ContainerValores h2 {
+  color: #231f20;
+  font-weight: lighter;
+  line-height: 18px;
+  padding: 1vw 1.7vw;
+  font-size: 1rem;
+}
+
+/* Servicios */
+
+.ContainerServicios {
+  background-color: #fff;
+  padding: 20px;
+  display: inline-flex;
+}
+
+.ContainerServicios div {
+  padding: 2vw;
+}
+
+.ContainerServicios h1 {
+  font-size: 1.8em;
+}
+
+.ContainerServicios h2 {
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin-top: 0.3vw;
+}
+
+#TextServInicio {
+  margin: 0.3vw 2vw 1vw 3vw;
+  padding: 2vw 1vw;
+}
+
+#TextServInicio h1 {
+  font-size: 1.8em;
+  margin-bottom: 1vw;
+}
+
+#TextServInicio h2 {
+font-size: 1.1em;
+margin-top: 1vw;
+font-weight: lighter;
+}
+
+.ContainerServicios img {
+  width: 28vw;
+  height: 16vw;
+}
+/* footer */
+
+.ContainerPiePagina {
+  background-color: #231f20;
+  padding: 20px;
+}
+
+.ContainerCopyRight {
+  text-align: center;
+  padding-top: 2vw;
+}
