@@ -407,9 +407,10 @@ animation-timing-function: ease-in;
   padding: 20px;
   color: #000;
   text-align: center;
-  width: 80%;
-  margin-left: 8vw;
-  height: 45vw;
+  width: 74%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35vw;
 }
 
 .ContainerPuntosFuertes hr {
@@ -436,31 +437,29 @@ animation-timing-function: ease-in;
 
 .ContainerValores {
   display: flex;
-  margin-bottom: 1vw;
 }
 
 .ContainerValores img {
-  width: 12vw;
-  padding-top: 1vw;
-  margin-top: 5vw;
+  width: 8vw;
+  margin-top: 4.5vw;
 }
 
 .ContainerValores div {
-  margin: 0 0.5vw;
+  margin: 0 2vw;
   font-size: 10px;
-  width: 25%;
+  width: 20%;
 }
 
 .ContainerValores div div {
   width: 100%;
   margin: 0;
-
 }
 
 .ContainerValores h1 {
  font-size: 20px;
  color: #18bc9c;
  padding: 0vw 1vw;
+ background: white;
 
 }
 
