@@ -48,11 +48,13 @@ main {
 .LogoTop {
   padding-left: 11.7vw;
   height: 5vw;
-  margin-top: 0.8vw;
+  margin-top: 0.5vw;
 }
 
 .LogoTop img {
-  width: 12vw;
+  width: 6.5vw;
+  box-shadow: -0.1px 8px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
 }
 
 .MenuNavTop {
@@ -167,7 +169,6 @@ main {
 position: absolute;
 right: 12vw;
 top: 1.9vw;
-height: 100%
 display: flex;
 justify-content: center;
 align-items: center;
@@ -185,7 +186,8 @@ align-items: center;
 #ctn-bars-search {
   background: rgba(238, 238, 238);
   position: fixed;
-  top: -9vw;
+  top: -9.5vw;
+  height: 3.5vw;
   width: 100%;
   z-index: 1;
   padding-top: .8vw;
@@ -198,7 +200,7 @@ align-items: center;
 
 #ctn-bars-search input {
   display: block;
-  width: 75vw;
+  width: 55vw;
   margin: 10px auto;
   padding: 0.5vw;
   font-size: 15px;
@@ -241,10 +243,9 @@ align-items: center;
   height: 100%;
   left: 0;
   display: none;
-
 }
 
-/* Redes */
+/* Redes Flotantes*/
 
 .ContainerSoc {
   text-align: center;
@@ -260,10 +261,12 @@ align-items: center;
   align-items: flex-end;
 }
 
+.SocialBar a {
+  margin: -2.25px;
+}
+
 .icon {
-  background: white;
   text-decoration: none;
-  padding: .7rem;
   transition: all .5s;
   height: 1vw;
   padding: 0.8rem;
@@ -271,6 +274,7 @@ align-items: center;
 
 .icon-facebook{
   background: #2e406e;
+  border-radius: 1rem 0 0 0;
 }
 
 .icon-instagram{
@@ -279,16 +283,10 @@ align-items: center;
 
 
 .icon-whatsapp{
-  background: #4adf83;
-}
-
-.icon:first-child {
-  border-radius: 1rem 0 0 0;
-}
-
-.icon:last-child {
+  background: #00a884;
   border-radius: 0 0 0 1rem;
 }
+
 .icon:hover {
   padding-right: 2rem;
   border-radius: 1rem 0 0 1rem;
@@ -389,6 +387,14 @@ animation-timing-function: ease-in;
   height: 62vw;
 }
 
+#olas-portada {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  z-index: 10;
+  margin-top: 31%;
+}
+
 @keyframes cambio {
   0%{margin-left: 0;}
   35%{margin-left: 0;}
@@ -403,49 +409,62 @@ animation-timing-function: ease-in;
 /* Por qué elegirnos*/
 
 .ContainerPuntosFuertes {
-  background: linear-gradient( white 50%, #dddcd5 50%);
-  padding: 20px;
+  background: #fff;
   color: #000;
   text-align: center;
-  width: 74%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: 35vw;
 }
 
+
 .ContainerPuntosFuertes hr {
   width: 10vw;
   height: 2px;
-  background: #18bc9c;
-  border-color: #18bc9c;
-  margin-left: 43.7%;
-  margin-top: 2vw;
-  border-radius: 100%;
+  margin-left: 45%;
+  background: #777777;
+  border: none; 
 }
 
 .ContainerPuntosFuertes h1 {
   font-size: 1.2em;
-  color: #95a5a6;
-  padding: 15px;
-  margin-top: 2.5vw;
+  color: black;
+  padding-top: 5px;
+  margin-top: 3vw;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .ContainerPuntosFuertes h2 {
-  font-size: 1.4em;
-  margin-bottom: 1vw;
+  font-size: 1.6em;
+  margin-bottom: 8px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  color:#777777;
 }
 
 .ContainerValores {
   display: flex;
+  justify-content: center;
 }
 
 .ContainerValores img {
   width: 8vw;
   margin-top: 4.5vw;
+  box-shadow: -0.1px 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 100%;
+}
+
+.iconos:hover{
+  box-shadow: -0.1px 50px 0px rgba(0, 0, 0, 0.15);
+  transition: all .3s;
 }
 
 .ContainerValores div {
-  margin: 0 2vw;
+  margin: 0 1vw;
   font-size: 10px;
   width: 20%;
 }
