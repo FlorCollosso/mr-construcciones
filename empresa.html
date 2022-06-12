@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Empresa - MR Construcciones</title>
-	<link rel="stylesheet"href="Css/styleindex.css"/>
+	<link rel="stylesheet" href="Css/styleindex.css" />
 </head>
 
-<body>
+<body id="empresa">
 
-		<!-- Barra Superior -->
+	<!-- Barra Superior -->
 
-		<header class="header">
+	<header class="header">
 
-				<section class="LogoTop">
-					<a href="index.html"><img src="Imagenes/LogoMR.png"></a>
-				</section>
+		<section class="logoTop">
+			<a href="index.html"><img src="Imagenes/LogoMR.png"></a>
+		</section>
 
-				<section class="ContainerLogoNav">
-						<nav class="ContainerNav">
-						  	<ul class="MenuNavTop">
-						    	<li class="InicioSelected">
-						    		<a href="index.html" title="Inicio" class="TextInicioSelected">Inicio</a>
-						    	</li>
-						   		<li class="EmpresaSelected">
-						   			<a href="empresa.html" title="Empresa">Empresa</a>
-						   			<ul id= "SubmenuTop">
-						   					<li>
-						   						<a href="#" title="Sobre Nosotros">Sobre Nosotros</a></li>
-						   					<li>
-						   						<a href="#" title="Nuestra Visión">Nuestra Visión</a></li>
-						   			</ul>
-						   		</li>
-						   		<li class="ServiciosSelected">
-						   			<a href="servicios.html" title="Servicios">Servicios</a></a>
-						   				<ul id="SubmenuTop">
-						   					<li>
-						   						<a href="#" title="Construcción en seco">Construcción</a></li>
-						   					<li>
-						   						<a href="#" title="Interiores">Diseño</a></li>
-						   				</ul>
-						   		</li>
-						   		<li class="ProyectosSelected">
-						   			<a href="proyectos.html" title="Proyectos">Proyectos</a>
-						    	</li>
-						    	<li class="ContactoSelected">
-						    		<a href="contacto.html" title="Contacto">Contacto</a>
-						    	</li>
-					  		</ul>
-						</nav>
-						<div id="ctn-icon-search">
-							<i class="fas fa-search" id="icon-search"></i>
-						</div>
-				</section>
+		<section>
+			<nav>
+				<ul>
+					<li >
+						<a href="index.html" title="Inicio">Inicio</a>
+					</li>
+					<li class="active">
+						<a href="empresa.html" title="Empresa" id="activeFont">Empresa</a>
 
-				<section class="ContainerSoc">
-					<div class="SocialBar">
-						<a href="https://www.facebook.com/"><img  src="Iconos/Facebook_icon.svg" class="icon icon-facebook" target="_blank"></a>
-						<a href="https://www.instagram.com/"><img  src="Iconos/Instagram_icon.svg" class="icon icon-instagram" target="_blank"></a>
-						<a href="https://web.whatsapp.com/"><img  src="Iconos/whatsapp_icon.svg" class="icon icon-whatsapp" target="_blank"></a>
-					</div>
-				</section>
+					</li>
+					<li >
+						<a href="servicios.html" title="Servicios">Servicios</a></a>
 
-		</header>
+					</li>
+					<li>
+						<a href="proyectos.html" title="Proyectos">Proyectos</a>
+					</li>
+					<li>
+						<a href="contacto.html" title="Contacto">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="ctn-icon-search">
+				<i class="fas fa-search" id="icon-search"></i>
+			</div>
+		</section>
+
+		<section class="containerSoc">
+			<div class="socialBar">
+				<a href="https://www.facebook.com/"><img src="Iconos/Facebook_icon.svg" class="icon icon-facebook"
+						target="_blank"></a>
+				<a href="https://www.instagram.com/"><img src="Iconos/Instagram_icon.svg" class="icon icon-instagram"
+						target="_blank"></a>
+				<a href="https://web.whatsapp.com/"><img src="Iconos/whatsapp_icon.svg" class="icon icon-whatsapp"
+						target="_blank"></a>
+			</div>
+		</section>
+
+	</header>
+
+	<section id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+		<ul id="boxSearch">
+			<li><a href=""><i class="fas fa-search"></i>Proyectos</a></li>
+			<li><a href=""><i class="fas fa-search"></i>Contacto</a></li>
+			<li><a href=""><i class="fas fa-search"></i>Diseños</a></li>
+			<li><a href=""><i class="fas fa-search"></i>Servicios</a></li>
+		</ul>
+
+	</section>
+
+	<div id="ctn-cover-search">
+
+	</div>
+
 	<main>
 		<section class="ContainerPortadaUno">
 			<div class="portada">
@@ -71,7 +81,7 @@
 			</div>
 		</section>
 
-			<!--Presentación-->
+		<!--Presentación-->
 
 		<section>
 			<div>
@@ -110,27 +120,25 @@
 		</section>
 
 
-			<table border="1"
-					cellpadding="5"
-					cellspacing="10">
+		<table border="1" cellpadding="5" cellspacing="10">
 
-					<thead>
-						<th>PASO UNO</th>
-						<th>PASO DOS</th>
-						<th>PASO TRES</th>
-					</thead>
+			<thead>
+				<th>PASO UNO</th>
+				<th>PASO DOS</th>
+				<th>PASO TRES</th>
+			</thead>
 
-					<tbody>
-						<tr>
-							<td>Nos comentas tus ideas y necesidades.</td>
-							<td>Preparamos un plan de acuerdo a tus requerimientos.</td>
-							<td>Concretamos el proyecto en tiempo y forma.</td>
-						</tr>
-					</tbody>
-			</table>
+			<tbody>
+				<tr>
+					<td>Nos comentas tus ideas y necesidades.</td>
+					<td>Preparamos un plan de acuerdo a tus requerimientos.</td>
+					<td>Concretamos el proyecto en tiempo y forma.</td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 
-		<!-- Footer -->
+	<!-- Footer -->
 
 	<footer>
 
@@ -138,31 +146,31 @@
 			<div id="LogoBottom">
 				<img src="LogoMRB.png">
 				<h1>Somos una empresa constructora
-						especializada en la construcción
-						tradicional y en seco.</h1>
+					especializada en la construcción
+					tradicional y en seco.</h1>
 			</div>
 
 			<div id="MenuNavBottom">
 				<h1>MENÚ</h1>
 				<nav>
 
-					 <ul>
-					   <li>
-					   	<a href="index.html" title="Inicio">Inicio</a>
-					   </li>
-					   	<li>
-					  		<a href="empresa.html" title="Empresa">Empresa</a>
-					  	</li>
-					  	<li>
-					  		<a href="servicios.html" title="Servicios">Servicios</a>
-					  	</li>
-					   	<li>
-					  		<a href="proyectos.html" title="Proyectos">Proyectos</a>
-					   </li>
-					   <li>
-					   	<a href="contacto.html" title="Contacto">Contacto</a>
-					   </li>
-				  </ul>
+					<ul>
+						<li>
+							<a href="index.html" title="Inicio">Inicio</a>
+						</li>
+						<li>
+							<a href="empresa.html" title="Empresa">Empresa</a>
+						</li>
+						<li>
+							<a href="servicios.html" title="Servicios">Servicios</a>
+						</li>
+						<li>
+							<a href="proyectos.html" title="Proyectos">Proyectos</a>
+						</li>
+						<li>
+							<a href="contacto.html" title="Contacto">Contacto</a>
+						</li>
+					</ul>
 				</nav>
 				<p>Redes</p>
 			</div>
@@ -189,9 +197,12 @@
 			</div>
 		</section>
 		<section class="ContainerCopyRight">
-				<p>Copyright © 2020 MR Construcciones. Todos los derechos reservados.</p>
+			<p>Copyright © 2020 MR Construcciones. Todos los derechos reservados.</p>
 		</section>
 
 	</footer>
+	<script src="https://kit.fontawesome.com/36872236e1.js"></script>
+	<script src="Js/Script.js"></script>
 </body>
+
 </html>

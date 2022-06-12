@@ -18,8 +18,8 @@ document.getElementById("ctn-cover-search").addEventListener("click", ocultar_bu
 
   bars_search =       document.getElementById("ctn-bars-search");
   cover_ctn_search =  document.getElementById("ctn-cover-search");
-  input_search =      document.getElementById("InputSearch");
-  box_search =        document.getElementById("BoxSearch");
+  input_search =      document.getElementById("inputSearch");
+  box_search =        document.getElementById("boxSearch");
 
 
    //Funcion para mostrar el buscador
