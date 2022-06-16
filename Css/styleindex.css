@@ -358,8 +358,10 @@ animation-timing-function: ease-in;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4vw;
   height: 40vw;
   padding-top: 3vw;
+  z-index: 3;
 }
 
 .containerPuntosFuertes h1 {
@@ -378,12 +380,12 @@ animation-timing-function: ease-in;
   color:#1b5952;
 }
 
-hr {
+.containerPuntosFuertes hr {
   width: 10vw;
   height: 2px;
   border: 0;
   margin: auto;
-  margin-top: 1vw;
+  margin-top: .5vw;
   background: linear-gradient(to left, #fff, #18bc9c, #fff);
   }
 
@@ -391,7 +393,7 @@ hr {
   display: flex;
   width: 80vw;
   margin: auto;
-  padding-top: 3vw;
+  margin-top: 1vw;
 }
 
 .containerValores img {
@@ -437,13 +439,56 @@ hr {
   top: 0;
 }
 
-#olasPuntosFuertes {
+#olasSobreNosotros {
   width: 100%;
-  height: 15%;
+  height: 30%;
   left: 0;
-  position: absolute;
-  margin-top: 35%;
+  top: -6vw;
+  position: relative;
   transform: rotate(180deg);
+  z-index: -1;
+}
+
+/* Sobre Nosotros*/
+
+.containerSobreNosotros {
+  height: 40vw;
+  background-image: url("../Imagenes/FondoLadrillos.jpg");
+  background-size: 100%;
+  position: relative;
+  z-index: -2;
+  color: #dddcd5;
+}
+
+.containerSobreNosotros div {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.containerSobreNosotros hr {
+  width: 10vw;
+  height: 2px;
+  border: 0;
+  margin: auto;
+  margin-top: .4vw;
+  margin-bottom: 1vw;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #18bc9c, rgba(0, 0, 0, 0));
+}
+
+.containerSobreNosotros h1 {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5vw;
+}
+
+.containerSobreNosotros h3 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vw;
+  padding-top: 1.5vw;
 }
 
 /* Servicios */
