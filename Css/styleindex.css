@@ -364,20 +364,12 @@ animation-timing-function: ease-in;
   z-index: 3;
 }
 
-.containerPuntosFuertes h1 {
-  color: #212020;
-  margin-top: 3vw;
-  font-weight: 300;
-  letter-spacing: 4px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9vw;
-}
-
 .containerPuntosFuertes h2 {
   font-weight: bolder;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
   color:#1b5952;
+  margin-top: 3vw;
 }
 
 .containerPuntosFuertes hr {
@@ -408,17 +400,18 @@ animation-timing-function: ease-in;
   margin: auto;
 }
 
-.containerValores h1 {
+.containerValores h3 {
  color: #1b5952;
  margin-top: 0;
  margin-bottom: 1.3vw;
  font-weight: 600;
 }
 
-.containerValores h2 {
+.containerValores p {
   color: #231f20;
   font-weight: 300;
-  font-size: 0.8vw;
+  font-size: 1.2rem;
+  font
 }
 
 .valoresTexto {
