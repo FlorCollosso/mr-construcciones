@@ -275,8 +275,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .slider ul {
 display: flex;
 width: 300%;
-animation: cambio 20s infinite alternate;
-animation-timing-function: ease-in;
+animation: cambio 50s infinite alternate;
 }
 
 .slider li {
@@ -312,6 +311,8 @@ animation-timing-function: ease-in;
   display: flex;
   flex-direction: column;
   transform: translateY(-25px);
+  animation: desaparecer 50s infinite alternate;
+  animation-timing-function: ease-in;
 }
 
 .slider h1 {
@@ -324,6 +325,8 @@ animation-timing-function: ease-in;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
+  animation: desaparecer 50s infinite alternate;
+  animation-timing-function: ease-in;
 }
 
 .slider img {
@@ -336,6 +339,19 @@ animation-timing-function: ease-in;
   position: absolute;
   z-index: 3;
   margin-top: 31%;
+}
+
+@keyframes desaparecer {
+  0%{opacity: 100%;}
+  34%{opacity: 100%;}
+  36%{opacity: 0%;}
+  40%{opacity: 0%;}
+  42%{opacity: 100%;}
+  64%{opacity: 100%;}
+  66%{opacity: 0%;}
+  69%{opacity: 0%;}
+  71%{opacity: 100%;}
+  100%{opacity: 100%;}
 }
 
 @keyframes cambio {
@@ -393,6 +409,8 @@ animation-timing-function: ease-in;
   margin-top: 4.5vw;
   box-shadow: -0.1px 8px 0px rgba(0, 0, 0, 0.1);
   border-radius: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .containerValores div div {  
@@ -411,13 +429,13 @@ animation-timing-function: ease-in;
   color: #231f20;
   font-weight: 300;
   font-size: 1.2rem;
-  font
 }
 
 .valoresTexto {
   top: -5vw;
-  transform: scale(0.01);
+  transform: scale(0.1);
   position: relative;
+  z-index: 1;
 }
 
 .valoresImg:hover {
@@ -445,8 +463,8 @@ animation-timing-function: ease-in;
 /* Sobre Nosotros*/
 
 .containerSobreNosotros {
-  height: 40vw;
-  background-image: url("../Imagenes/FondoLadrillos.jpg");
+  height: 37vw;
+  background-image: url("../img/fondo_ladrillos.jpg");
   background-size: 100%;
   position: relative;
   z-index: -2;
@@ -469,14 +487,14 @@ animation-timing-function: ease-in;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), #18bc9c, rgba(0, 0, 0, 0));
 }
 
-.containerSobreNosotros h1 {
+.containerSobreNosotros h2 {
   font-weight: bolder;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5vw;
 }
 
-.containerSobreNosotros h3 {
+.containerSobreNosotros p {
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
@@ -489,43 +507,20 @@ animation-timing-function: ease-in;
 .containerServicios {
   background-color: #fff;
   padding: 20px;
-  display: inline-flex;
+  text-align: center;
 }
 
-.containerServicios div {
-  padding: 2vw;
-}
-
-.containerServicios h1 {
-  font-size: 1.8em;
-}
-
-.containerServicios h2 {
-  font-size: 1.1em;
-  font-weight: lighter;
-  margin-top: 0.3vw;
-}
-
-#TextServInicio {
-  margin: 0.3vw 2vw 1vw 3vw;
-  padding: 2vw 1vw;
-}
-
-#TextServInicio h1 {
-  font-size: 1.8em;
-  margin-bottom: 1vw;
-}
-
-#TextServInicio h2 {
-font-size: 1.1em;
-margin-top: 1vw;
-font-weight: lighter;
+#divServInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
 }
 
 .containerServicios img {
-  width: 28vw;
-  height: 16vw;
+  width: 23vw;
+  height: 14vw;
 }
+
 /* footer */
 
 .ContainerPiePagina {
