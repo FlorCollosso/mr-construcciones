@@ -39,3 +39,9 @@ document.getElementById("ctn-cover-search").addEventListener("click", ocultar_bu
      input_search.value= "";
      flag = true;
    }
+
+   $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
