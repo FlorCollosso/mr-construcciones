@@ -397,6 +397,7 @@ animation: cambio 50s infinite alternate;
   border-radius: 100%;
   position: relative;
   z-index: 2;
+  transition: all .3s ease;
 }
 
 .containerValores div div {  
@@ -414,14 +415,16 @@ animation: cambio 50s infinite alternate;
 .containerValores p {
   color: #231f20;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 25px;
 }
 
 .valoresTexto {
-  top: -5vw;
+  top: -8vw;
   transform: scale(0.1);
   position: relative;
   z-index: 1;
+  transition: all .3s ease;
 }
 
 .valoresImg:hover {
@@ -449,7 +452,7 @@ animation: cambio 50s infinite alternate;
 }
 
 .containerSobreNosotros {
-  height: 40vw;
+  height: 38vw;
   background-image: url("../img/fondo_ladrillos.jpg");
   background-size: 100%;
   position: relative;
@@ -462,7 +465,7 @@ animation: cambio 50s infinite alternate;
   margin: auto;
   text-align: center;
   position: relative;
-  top: -2vw;
+  top: -2.7vw;
 }
 
 .containerSobreNosotros hr {
@@ -494,28 +497,9 @@ animation: cambio 50s infinite alternate;
 
 .containerServicios {
   background-color: #fff;
-  height: 43vw;
+  height: 45vw;
   top: 0;
-  position: relative;
   text-align: center;
-  overflow: hidden;
-}
-
-.imgServInicio div {
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% -50%;
-  -ms-transform-origin: 50% -50%;
-  transform-origin: 50% -50%;
-  position: absolute;
-  z-index: 1;
-  opacity: 0; 
-}
-
-.imgServInicio:hover div {
-  -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  opacity: 1;
 }
 
 #divServInicio {
@@ -523,17 +507,32 @@ animation: cambio 50s infinite alternate;
   flex-wrap: wrap;
   justify-content: center; 
   margin-top: 5vw;
+  overflow: hidden;
 }
 
 .imgServInicio {
-  height: 14.5vw;
-  padding-left: .5vw;
-  
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 23vw;
+  height: 14vw;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: .3vw;
+  position: relative;
+  perspective: 50em;
+}
+
+.imgServInicio:hover img {
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  opacity: 0;
 }
 
 .containerServicios img {
-  width: 23vw;
-  height: 14vw;
+  width: 100%;
+  height: 15vw;
+  transition: all .7s ease;
+  opacity: 1;
 }
 
 .containerServicios hr {
@@ -550,16 +549,33 @@ animation: cambio 50s infinite alternate;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
   color:#1b5952;
-  padding-top: 5vw;
-  font-size: 1.6rem;
+  padding-top: 6vw;
+  font-size: 1.5rem;
+}
+
+.imgServInicio .detalles {
+  position: absolute;
+  display: inline;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition: all .6s ease;
+  opacity: 0;
+}
+
+.imgServInicio:hover .detalles {
+  transform: rotateX(0deg);
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+  opacity: 1;
 }
 
 .containerServicios h3 {
-  background: rgba(0, 0, 0, 0.7);
   position: relative;
   display: flex;
-  bottom: 14.2vw;
-  height: 12vw;
   color: #fff;
   align-items: flex-start;
   padding: 2vw 0 0 2vw;
@@ -569,29 +585,26 @@ animation: cambio 50s infinite alternate;
 .containerServicios p {
   position: relative;
   display: flex;
-  bottom: 24.5vw;
-  height: 14vw;
   color: #fff;
   width: 17vw;
   text-align: left;
-  padding: 0 0 0 2vw;
+  padding: .5vw 0 0 2vw;
   font-weight: 500;
 }
 
 .botonVerMas {
   position: relative;
-  bottom: 35.2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid #ffffff;
   width: 4vw;
   height: 1.8vw;
-  margin: 0 0 0 2vw;
+  margin: .7vw 0 0 2vw;
   font-weight: 500;
 }
 
-.botonVerMas:hover {
+.botonVerMas:hover, .botonVerMas:hover a {
   background-color: #ffffff;
   color: black;
 }
