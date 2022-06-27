@@ -381,7 +381,7 @@ animation: cambio 50s infinite alternate;
   margin: auto;
   margin-top: .5vw;
   background: linear-gradient(to left, #fff, #18bc9c, #fff);
-  }
+}
 
 .containerValores {
   display: flex;
