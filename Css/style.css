@@ -326,10 +326,10 @@ animation: cambio 50s infinite alternate;
 
 #olasPortada {
   width: 100%;
-  height: 18vw;
+  height: 20vw;
   position: absolute;
   z-index: 3;
-  margin-top: 30%;
+  margin-top: 26%;
 }
 
 @keyframes desaparecer {
@@ -360,6 +360,7 @@ animation: cambio 50s infinite alternate;
 
 .containerPuntosFuertes {
   background: #fff;
+  position: relative;
   color: #000;
   text-align: center;
   width: 100%;
@@ -370,7 +371,6 @@ animation: cambio 50s infinite alternate;
   padding-top: 3vw;
   z-index: 3;
 }
-
 
 .containerPuntosFuertes h2 {
   letter-spacing: 2px;
@@ -401,6 +401,7 @@ animation: cambio 50s infinite alternate;
   margin-top: 1vw;
 }
 
+
 .containerValores img {
   width: 8vw;
   margin-top: 4.5vw;
@@ -409,6 +410,15 @@ animation: cambio 50s infinite alternate;
   position: relative;
   z-index: 2;
   transition: all .3s ease;
+}
+
+.animacion img{
+  animation: escala 1s infinite alternate;
+}
+
+@keyframes escala {
+  0% {width: 8vw;}
+  100% {width: 8.5vw;}
 }
 
 .containerValores div div {  
@@ -454,48 +464,38 @@ animation: cambio 50s infinite alternate;
 
 #olasSobreNosotros {
   width: 100%;
-  height: 18vw;
+  height: 20vw;
   left: 0;
-  top: -7vw;
+  top: -5vw;
   position: relative;
   transform: rotate(180deg);
-  z-index: -1;
+  z-index: 2;
 }
 
 .containerSobreNosotros {
   height: 60vw;
-  background-image: url("../img/fondo_ladrillos.jpg");
+  background-image: url(../img/fondo_ladrillos.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  z-index: -2;
+  
   color: #dddcd5;
 }
 
 .containerSobreNosotros div {
-  width: 70%;
+  width: 60%;
   margin: auto;
   text-align: center;
   position: relative;
-  top: -2.7vw;
-}
-
-.containerSobreNosotros hr {
-  width: 10vw;
-  height: 2px;
-  border: 0;
-  margin: auto;
-  margin-top: .4vw;
-  margin-bottom: 2vw;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), #dddcd5, rgba(0, 0, 0, 0));
+  top: -7vw;
 }
 
 .containerSobreNosotros h2 {
   font-weight: bolder;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
+  font-size: 3rem;
 }
 
 .containerSobreNosotros p {
@@ -513,7 +513,8 @@ animation: cambio 50s infinite alternate;
   background-color: #fff;
   text-align: center;
   position: relative;
-  top: -5vw;
+  top: -25vw;
+  z-index: 1;
 }
 
 .containerProyectos h2 {

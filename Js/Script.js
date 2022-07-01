@@ -40,4 +40,10 @@ document.getElementById("ctn-cover-search").addEventListener("click", ocultar_bu
      flag = true;
    }
 
- 
+                          //Animación Valores
+  console.log(document.getElementById("divRapidez"))
+  document.getElementById("divRapidez").addEventListener("mouseleave", () => {
+    document.getElementById("divRapidez").classList.remove("animacion");
+    console.log("entre")
+  });
+  
