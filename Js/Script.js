@@ -42,7 +42,7 @@ document.getElementById("ctn-cover-search").addEventListener("click", ocultar_bu
 
                           //Animación Valores
   console.log(document.getElementById("divRapidez"))
-  document.getElementById("divRapidez").addEventListener("mouseleave", () => {
+  document.getElementById("divRapidez").addEventListener("mouseenter", () => {
     document.getElementById("divRapidez").classList.remove("animacion");
     console.log("entre")
   });
