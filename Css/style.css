@@ -3,7 +3,9 @@
 :root {
   --hueso: #dddcd5;
   --verdeAgua: #18bc9c;
-  --blanco: #fff
+  --blanco: #fff;
+  --verdePantano: #1b5952;
+  --grisOscuro: #231f20;
 }
 
 * {
@@ -12,7 +14,7 @@
 }
 
  body {
-  background-color: #dddcd5;
+  background-color: var(--hueso);
   color: #000;
   font-family: Helvetica;
   overflow-x: hidden;
@@ -376,8 +378,9 @@ animation: cambio 50s infinite alternate;
   letter-spacing: 2px;
   margin-top: 1.5vw;
   font-family: Arial Black; 
-  font-weight: bold; font-size: 30px; 
-  background: #1b5952; 
+  font-weight: bold; 
+  font-size: 2rem; 
+  background: var(--verdePantano);
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
   background-clip: text; 
@@ -426,7 +429,7 @@ animation: cambio 50s infinite alternate;
 }
 
 .containerValores h3 {
- color: #1b5952;
+ color: var(--verdePantano);
  margin-top: 0;
  margin-bottom: 1.3vw;
  font-weight: 600;
@@ -472,71 +475,103 @@ animation: cambio 50s infinite alternate;
 }
 
 .containerSobreNosotros {
-  height: 60vw;
+  height: 45vw;
   background-image: url(../img/portada_sobre_nosotros.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
   color: var(--blanco);
 }
 
-.containerSobreNosotros div {
-  position: relative;
-  height: 37vw;
-}
-
-.divTextoNosotros {
-  display: flex;
-  color: #000;
-  text-align: left;
-  background: var(--blanco);
-  padding: 3vw 8vw 0 8vw;
-}
-
-.divTextoNosotros div {
-  padding: 3vw 0 0 2vw;
-}
-
-.divTextoNosotros img {
-  width: 30vw;
-  height: 20vw;
-  position: relative;
-  top: 2vw;
-}
-
 .containerSobreNosotros h2 {
+  font-weight: bold; 
+  font-size: 2rem; 
+  background: var(--verdePantano); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  position: relative;
+  top: 1vw;
+}
+
+.containerSobreNosotros h3 {
+  color: var(--grisOscuro);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  padding: .5vw 0 .8vw .4vw;
+  position: relative;
+}
+
+.containerSobreNosotros h4 {
   font-weight: bolder;
-  text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
-  position: relative;
-  bottom: 6vw;
 }
 
 .containerSobreNosotros p {
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2vw;
-  padding-top: 2vw;
+  font-size: 1.2rem;
+  padding: 0 0 1vw .4vw;
+}
+
+.containerSobreNosotros div {
+  height: 24.5vw;
+}
+
+.divTextoNosotros {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  display: flex;
+  color: #000;
+  text-align: left;
+  background: rgb(221,220,213);
+  background: linear-gradient(100deg, rgba(221,220,213,1) 87%, rgba(255,255,255,0) 89%);
+  -webkit-box-shadow: -42px -27px 68px -32px rgba(0,0,0,0.54);
+  -moz-box-shadow: -42px -27px 68px -32px rgba(0,0,0,0.54);
+  box-shadow: -42px -27px 68px -32px rgba(0,0,0,0.54);
+  position: relative;
+  top: -2vw;
+  z-index: 2;
+}
+
+.divTextoNosotros div {
+  width: 60vw;
+  padding: 3vw 0 0 6vw;
+}
+
+.divTextoNosotros img {
+  height: 151%;
+  position: relative;
+  bottom: 9.5vw;
+  right: -4vw;
 }
 
 /* Servicios */
 
 .containerServicios {
   background-color: var(--blanco);
-  height: 40vw;
+  height: 58vw;
   position: relative;
+  top: -13vw;
   text-align: center;
+  z-index: 1;
 }
 
 #divServInicio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  margin-top: 3vw;
+  margin-top: 4vw;
   overflow: hidden;
 }
 
@@ -575,11 +610,12 @@ animation: cambio 50s infinite alternate;
 }
 
 .containerServicios h2 {
-  padding-top: 3vw;
+  padding-top: 18vw;
   letter-spacing: 2px;
   font-family: Arial Black; 
-  font-weight: bold; font-size: 30px; 
-  background: #1b5952; 
+  font-weight: bold; 
+  font-size: 2rem; 
+  background: var(--verdePantano); 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
   background-clip: text; 
@@ -659,7 +695,7 @@ animation: cambio 50s infinite alternate;
   letter-spacing: 2px;
   font-family: Arial Black; 
   font-weight: bold; font-size: 30px; 
-  background: #1b5952; 
+  background: var(--verdePantano); 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
   background-clip: text; 
@@ -707,8 +743,8 @@ animation: cambio 50s infinite alternate;
 
 footer {
   width: 100%;
-  background-color: #231f20;
-  color: #dddcd5;
+  background-color: var(--grisOscuro);
+  color: var(--hueso);
   position: absolute;
   margin-top: 4vw;
   padding: 1vw;
