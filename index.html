@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MR Construcciones</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -14,9 +15,9 @@
 	<main>
 		<header class="header">
 
-			<section class="logoTop">
+			<div class="logoTop">
 				<a href="index.html"><img src="img/logoMR.png"></a>
-			</section>
+			</div>
 
 			<section>
 				<nav>
@@ -103,64 +104,72 @@
 
 			<!-- Por qué elegirnos -->
 
-			<section class="containerPuntosFuertes">
-				<h2>POR QUÉ ELEGIRNOS</h2>
-
-				<div class="containerValores">
-
+			<section class="containerSobreNosotros">
+				<div data-aos="fade-left" class="containerNosotros">	
 					<div>
-						<div id="divRapidez" class="animacion">
-							<img src="img/rapidez.png" class="valoresImg">
-							<div class="valoresTexto">
-								<h3>RAPIDEZ</h3>
-								<p>Nos comprometemos con cada uno de nuestros clientes desde el comienzo hasta el final de la obra.</p>
+						<div class="divTextoNosotros">
+							<hr id="hrAnimacion">
+							<div>
+								<h2>QUIENES SOMOS</h2>
+								<h3>EXPERIENCIA Y CONOCIMIENTO EN LA CONSTRUCCIÓN</h3>
+								<p>MR Construcciones es una empresa referente en la industria nacional de la construcción de obras ferroviarias, civiles, electromecánicas y medioambientales.Desde nuestros inicios en 1974 desarrollamos servicios integrando conocimiento y experiencia. Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.</p>
 							</div>
 						</div>
+						<img src="img/nosotros_texto.jpg" id="imgTextoNosotros">
 					</div>
-
-					<div>
+				</div>
+				<div class="containerPorQueElegirnos">
+					<h2>POR QUÉ ELEGIRNOS</h2>
+					<div class="containerValores">
 						<div>
-							<img src="img/compromiso.png" class="valoresImg">
-							<div class="valoresTexto">
-								<h3>SERIEDAD</h3>
-								<p>Nos comprometemos con el trabajos asumiendo y resolviendo las consecuencias derivadas
-									de cada una de las acciones.</p>
+							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" id="divRapidez" class="animacion">
+								<img src="img/rapidez.png" class="valoresImg">
+								<div class="valoresTexto">
+									<h3>RAPIDEZ</h3>
+									<p>Nos comprometemos con cada uno de nuestros clientes desde el comienzo hasta el final de la obra.</p>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<div>
 						<div>
-							<img src="img/calidad.png" class="valoresImg">
-							<div class="valoresTexto">
-								<h3>CALIDAD</h3>
-								<p>Utilizamos materiales de calidad y empleamos mano de obra capacitada para lograr
-									terminaciones de primer nivel.</p>
+							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700" id="divRapidez" >
+								<img src="img/compromiso.png" class="valoresImg">
+								<div class="valoresTexto">
+									<h3>SERIEDAD</h3>
+									<p>Nos comprometemos con el trabajos asumiendo y resolviendo las consecuencias derivadas
+										de cada una de las acciones.</p>
+								</div>
 							</div>
 						</div>
-
-					</div>
-
-					<div>
 						<div>
-							<img src="img/experiencia.png" class="valoresImg">
-							<div class="valoresTexto">
-								<h3>EXPERIENCIA</h3>
-								<p>Tenemos un amplio conocimiento y más de 15 años de experiencia comprobable en el
-									rubro de la construcción.</p>
+							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900" id="divRapidez" >
+								<img src="img/calidad.png" class="valoresImg">
+								<div class="valoresTexto">
+									<h3>CALIDAD</h3>
+									<p>Utilizamos materiales de calidad y empleamos mano de obra capacitada para lograr
+										terminaciones de primer nivel.</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" id="divRapidez" >
+								<img src="img/experiencia.png" class="valoresImg">
+								<div class="valoresTexto">
+									<h3>EXPERIENCIA</h3>
+									<p>Tenemos un amplio conocimiento y más de 15 años de experiencia comprobable en el
+										rubro de la construcción.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</section>
 
-			<section class="containerSobreNosotros">
-				<img src="img/fondo_olas.png" id="olasSobreNosotros">	
+			<section class="containerVision">
+				<img src="img/fondo_olas.png" id="olasVision">	
 				<div>
-					<div class="divTextoNosotros">
+					<div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="divTextoVision">
 						<div>
-							<h2>QUIENES SOMOS</h2>
+							<h2>NUESTRA VISIÓN</h2>
 							<h3>EXPERIENCIA Y CONOCIMIENTO EN LA CONSTRUCCIÓN</h3>
 							<p>MR Construcciones es una empresa referente en la industria nacional de la construcción de obras ferroviarias, civiles, electromecánicas y medioambientales.Desde nuestros inicios en 1974 desarrollamos servicios integrando conocimiento y experiencia. Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.</p>
 						</div>
@@ -289,8 +298,16 @@
 		</section>
 
 	</footer>
+
 	<script src="https://kit.fontawesome.com/36872236e1.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true,
+		});
+	</script>
 
 </body>
 

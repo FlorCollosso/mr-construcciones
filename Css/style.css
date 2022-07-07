@@ -358,28 +358,123 @@ animation: cambio 50s infinite alternate;
   100%{margin-left: -200%;}
 }
 
-/* Por qué elegirnos*/
+/* Nosotros */
 
-.containerPuntosFuertes {
+.containerSobreNosotros {
   background: var(--blanco);
   position: relative;
   color: #000;
   text-align: center;
   width: 100%;
   margin-left: auto;
-  margin-right: auto;
   margin-top: 4vw;
-  height: 37vw;
+  height: 60vw;
   padding-top: 3vw;
   z-index: 3;
 }
 
-.containerPuntosFuertes h2 {
+.containerNosotros {
+  height: 26vw;
+  color: var(--blanco);
+}
+
+#imgTextoNosotros {
+  height: 24vw;
+  position: relative;
+  top: -26vw;
+  left: 29vw;
+  z-index: 2;
+}
+
+.containerNosotros h2 {
+  font-weight: bold; 
+  font-size: 2rem; 
+  background: var(--verdePantano); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  background-clip: text; 
+  color: transparent; 
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  position: relative;
+  top: 1vw;
+}
+
+.containerNosotros h3 {
+  color: var(--grisOscuro);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  padding: .5vw 0 .4vw .4vw;
+  position: relative;
+}
+
+.containerNosotros h4 {
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+
+.containerNosotros p {
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  padding: 0 0 1vw .4vw;
+}
+
+.containerNosotros div {
+  height: 24vw;
+}
+
+.divTextoNosotros {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  display: flex;
+  color: #000;
+  text-align: left;
+  background: var(--hueso);
+  -webkit-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.32);
+  -moz-box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.32);
+  box-shadow: 10px 10px 32px 0px rgba(0,0,0,0.32);
+  position: relative;
+  top: -2vw;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.hrAnimacion {
+  height: 24vw;
+  width: 0;
+  border: none;
+  color: var(--grisOscuro);
+  background: var(--grisOscuro);
+  position: absolute;
+  z-index: 2;
+  animation: aparecerDesaparecer 2s ease-in-out;
+}
+
+@keyframes aparecerDesaparecer {
+0% {left: -100%; width: 58vw;}
+50% {left: 0; width: 58vw;}
+100%{left: 100%; width: 0;}
+}
+
+.divTextoNosotros div {
+  width: 60vw;
+  padding: 3vw 30vw 0 6vw;
+}
+
+.containerPorQueElegirnos h2 {
   letter-spacing: 2px;
   margin-top: 1.5vw;
   font-family: Arial Black; 
   font-weight: bold; 
-  font-size: 2rem; 
+  font-size: 2.5rem; 
   background: var(--verdePantano);
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
@@ -388,22 +483,12 @@ animation: cambio 50s infinite alternate;
   text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
 }
 
-.containerPuntosFuertes hr {
-  width: 10vw;
-  height: 2px;
-  border: 0;
-  margin: auto;
-  margin-top: .5vw;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), #1b5952, rgba(0, 0, 0, 0));
-}
-
 .containerValores {
   display: flex;
   width: 80vw;
   margin: auto;
   margin-top: 1vw;
 }
-
 
 .containerValores img {
   width: 8vw;
@@ -462,9 +547,9 @@ animation: cambio 50s infinite alternate;
   top: 0;
 }
 
-/* Sobre Nosotros*/
+/* Visión */
 
-#olasSobreNosotros {
+#olasVision {
   width: 100%;
   height: 20vw;
   left: 0;
@@ -474,7 +559,7 @@ animation: cambio 50s infinite alternate;
   z-index: 2;
 }
 
-.containerSobreNosotros {
+.containerVision {
   height: 45vw;
   background-image: url(../img/portada_sobre_nosotros.jpg);
   background-repeat: no-repeat;
@@ -483,7 +568,7 @@ animation: cambio 50s infinite alternate;
   color: var(--blanco);
 }
 
-.containerSobreNosotros h2 {
+.containerVision h2 {
   font-weight: bold; 
   font-size: 2rem; 
   background: var(--verdePantano); 
@@ -498,7 +583,7 @@ animation: cambio 50s infinite alternate;
   top: 1vw;
 }
 
-.containerSobreNosotros h3 {
+.containerVision h3 {
   color: var(--grisOscuro);
   font-size: 1.3rem;
   font-weight: 400;
@@ -508,14 +593,14 @@ animation: cambio 50s infinite alternate;
   position: relative;
 }
 
-.containerSobreNosotros h4 {
+.containerVision h4 {
   font-weight: bolder;
   letter-spacing: 3px;
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
 }
 
-.containerSobreNosotros p {
+.containerVision p {
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
@@ -523,13 +608,12 @@ animation: cambio 50s infinite alternate;
   padding: 0 0 1vw .4vw;
 }
 
-.containerSobreNosotros div {
+.containerVision div {
   height: 24.5vw;
 }
 
-.divTextoNosotros {
-  left: 50%;
-  transform: translateX(-50%);
+.divTextoVision {
+  margin: auto;
   width: 85%;
   display: flex;
   color: #000;
@@ -544,12 +628,12 @@ animation: cambio 50s infinite alternate;
   z-index: 2;
 }
 
-.divTextoNosotros div {
+.divTextoVision div {
   width: 60vw;
   padding: 3vw 0 0 6vw;
 }
 
-.divTextoNosotros img {
+.divTextoVision img {
   height: 151%;
   position: relative;
   bottom: 9.5vw;
