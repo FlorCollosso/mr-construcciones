@@ -21,7 +21,7 @@ input_search = document.getElementById("inputSearch");
 box_search = document.getElementById("boxSearch");
 
 
-//Funcion para mostrar el buscador
+//Función para mostrar el buscador
 
 function mostrar_buscador() {
   bars_search.style.top = "4vw";
@@ -30,7 +30,7 @@ function mostrar_buscador() {
   flag = false;
 }
 
-//Funcion para ocultar el Buscador
+//Función para ocultar el Buscador
 
 function ocultar_buscador() {
   bars_search.style.top = "-9vw";
@@ -39,13 +39,14 @@ function ocultar_buscador() {
   flag = true;
 }
 
-//Animación Valores
+//Animación de la seección Valores
 
 document.getElementById("divRapidez").addEventListener("mouseenter", () => {
   document.getElementById("divRapidez").classList.remove("animacion");
 
 });
 
+//Animación de la sección Nosotros
 
 let hrAnimado = document.getElementById("hrAnimacion");
 
@@ -58,3 +59,11 @@ function mostrarScroll() {
 }
 
 window.addEventListener('scroll', mostrarScroll);
+
+//La página vuelve al inicio cuando recarga
+
+$(window).on('beforeunload', function() {
+  window.setTimeout(function() {
+   $(window).scrollTop(0); 
+}, 0);
+});
