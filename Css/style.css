@@ -247,7 +247,7 @@ align-items: center;
 .cuerpo {
   position: absolute;
   width: 100%;
-  max-height: 323vw;
+  max-height: 325vw;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -917,7 +917,7 @@ margin-top: 4vw;
   bottom: 22.2vw;
   color: var(--blanco);
   background: var(--grisOscuro);
-  height: 60vw;
+  height: 61vw;
 }
 
 .tituloContacto {
@@ -941,34 +941,45 @@ fieldset {
   padding: .8vw;
   margin: .8vw 0;
   border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-#inputMensaje input {
+#inputMensaje textarea {
 height: 8vw;
-margin-bottom: 2vw;
+margin: .8vw 0;
+padding: .8vw;
+width: 40vw;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+font-family: 'Poppins', sans-serif;
 }
 
 .botonContacto {
   display: flex;
   justify-content: center;
   padding: 0 12vw;
+  margin-top: .8vw;
 }
 
 .botonContacto input {
-  color: var(--blanco);
+  color: #fff;
   width: 8vw;
   height: 2.3vw;
-  background: var(--verdeAgua);
+  background: #18bc9c;
   border: none;
   border-radius: 5px;
   justify-content: center;
   font-size: 1.1rem;
+  font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
 }
 
 .botonContacto input:hover {
   background: #198c75;
+  cursor: pointer;
 }
 
 .mapa iframe{
@@ -985,7 +996,7 @@ footer {
   background-color: var(--grisOscuro);
   color: var(--hueso);
   position: relative;
-  top: 322vw;
+  top: 323.1vw;
   padding: 0 0 1vw 0;
 }
 
