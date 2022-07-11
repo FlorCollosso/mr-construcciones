@@ -470,7 +470,7 @@ align-items: center;
 }
 
 .containerPorQueElegirnos {
-margin-top: 4vw;
+margin-top: 5.5vw;
 }
 
 .containerPorQueElegirnos h2 {
@@ -536,7 +536,7 @@ margin-top: 4vw;
 .containerValores h3 {
  color: var(--verdePantano);
  margin-top: 0;
- margin-bottom: 1.3vw;
+ margin-bottom: .5vw;
  font-weight: 600;
 }
 
@@ -644,7 +644,7 @@ margin-top: 4vw;
   -moz-box-shadow: -42px -27px 68px -32px rgba(0,0,0,0.54);
   box-shadow: -42px -27px 68px -32px rgba(0,0,0,0.54);
   position: relative;
-  top: -3.5vw;
+  top: -5.5vw;
   z-index: 2;
 }
 
@@ -656,15 +656,15 @@ margin-top: 4vw;
 .divTextoVision img {
   height: 151%;
   position: relative;
-  bottom: 8.5vw;
-  right: -4vw;
+  bottom: 7vw;
+  right: -3vw;
 }
 
 /* Servicios */
 
 .containerServicios {
   background-color: var(--blanco);
-  height: 43vw;
+  height: 41vw;
   position: relative;
   top: -15vw;
   text-align: center;
@@ -794,7 +794,7 @@ margin-top: 4vw;
 /* Proyectos */
 
 .containerProyectos {
-  height: 58vw;
+  height: 60vw;
   text-align: center;
   position: relative;
   top: -20vw;
@@ -813,7 +813,7 @@ margin-top: 4vw;
   font-family: 'Poppins', sans-serif;
   font-size: 4rem;
   position: relative;
-  top: -2vw;
+  top: -3vw;
 }
 
 .containerProyectos h3 {
@@ -823,7 +823,7 @@ margin-top: 4vw;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
   position: relative;
-  top: -2.6vw;
+  top: -3.6vw;
 }
 
 
@@ -936,7 +936,7 @@ fieldset {
 }
 
 .textoContacto input {
-  width: 40vw;
+  width: 30vw;
   border: none;
   padding: .8vw;
   margin: .8vw 0;
@@ -946,10 +946,10 @@ fieldset {
 }
 
 #inputMensaje textarea {
-height: 8vw;
+height: 6vw;
 margin: .8vw 0;
 padding: .8vw;
-width: 40vw;
+width: 30vw;
 border: none;
 border-radius: 5px;
 font-size: 1rem;
@@ -958,32 +958,67 @@ font-family: 'Poppins', sans-serif;
 
 .botonContacto {
   display: flex;
-  justify-content: center;
   padding: 0 12vw;
   margin-top: .8vw;
 }
 
-.botonContacto input {
+.boton div {
   color: #fff;
   width: 8vw;
-  height: 2.3vw;
-  background: #18bc9c;
+  height: 1.8vw;
   border: none;
-  border-radius: 5px;
-  justify-content: center;
+  border-radius: 6px;
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
+  
 }
 
-.botonContacto input:hover {
-  background: #198c75;
+.boton, .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.boton {
+  width: 180px;
+  height: 60px;
+  border-radius: 6px;
+  background: #18bc9c;
+  margin: auto;
+  margin-top: 2vw;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+
+.boton svg {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
+
+.boton__circulo {
+  width: 80px;
+  height: 80px;
+  margin-top: 1vw;
+  background: mediumseagreen;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+}
+
+.tick:hover {
   cursor: pointer;
 }
 
+.tick {
+  color: white;
+  font-size: 2rem;
+  transition: all .9s;
+}
+
 .mapa iframe{
-  position:relative;
+  position:static
+  top: 20vw;
   height: 17vw;
   width: 100%;
   border: none;

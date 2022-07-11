@@ -62,8 +62,28 @@ window.addEventListener('scroll', mostrarScroll);
 
 //La página vuelve al inicio cuando recarga
 
-$(window).on('beforeunload', function() {
-  window.setTimeout(function() {
-   $(window).scrollTop(0); 
-}, 0);
+//$(window).on('beforeunload', function() {
+  //window.setTimeout(function() {
+   //$(window).scrollTop(0); 
+//}, 0);
+//});
+
+//Botón Enviar
+
+let boton = document.querySelector('.boton');
+let botonTexto = document.querySelector('.tick');
+
+const tickMark = "<svg width=\"48\" height=\"35\" viewBox=\"0 0 58 45\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65\"/></svg>";
+
+botonTexto.innerHTML = "Enviar";
+
+boton.addEventListener('click', function(e) {
+  e.preventDefault()
+
+  if (botonTexto.innerHTML !== "Enviar") {
+    botonTexto.innerHTML = "Enviar";
+  } else if (botonTexto.innerHTML === "Enviar") {
+    botonTexto.innerHTML = tickMark;
+  }
+  this.classList.toggle('boton__circulo');
 });
