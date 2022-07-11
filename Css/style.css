@@ -988,7 +988,7 @@ font-family: 'Poppins', sans-serif;
   border-radius: 6px;
   background: #18bc9c;
   margin: auto;
-  margin-top: 2vw;
+  margin-top: 2.01vw;
   transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
 }
 
