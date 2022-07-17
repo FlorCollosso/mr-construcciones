@@ -6,11 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Proyectos - MR Construcciones</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="proyectos">
 
-	<!-- Barra Superior -->
+	<!-- Menu Navegador -->
 
 	<header class="header">
 
@@ -25,10 +27,6 @@
 						<a href="index.html" title="Inicio">Inicio</a>
 					</li>
 					<li>
-						<a href="empresa.html" title="Empresa">Empresa</a>
-
-					</li>
-					<li>
 						<a href="servicios.html" title="Servicios">Servicios</a></a>
 
 					</li>
@@ -41,7 +39,7 @@
 				</ul>
 			</nav>
 			<div id="ctn-icon-search">
-				<i class="fas fa-search" id="icon-search"></i>
+				<i class="fa fa-search" id="icon-search"></i>
 			</div>
 		</section>
 
@@ -61,12 +59,12 @@
 	<section id="ctn-bars-search">
 		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
 		<ul id="boxSearch">
-			<li><a href=""><i class="fas fa-search"></i>Proyectos</a></li>
-			<li><a href=""><i class="fas fa-search"></i>Contacto</a></li>
-			<li><a href=""><i class="fas fa-search"></i>Diseños</a></li>
-			<li><a href=""><i class="fas fa-search"></i>Servicios</a></li>
+			<li><a href="proyectos.html"><i class="fa fa-search" id="icon-search"></i>Proyectos</a></li>
+			<li><a href=""><i class="fa fa-search" id="icon-search"></i>Contacto</a></li>
+			<li><a href="servicios.html"><i class="fa fa-search" id="icon-search"></i>Servicios</a></li>
+			<li><a href=""><i class="fa fa-search" id="icon-search"></i>Visión</a></li>
+			<li><a href=""><i class="fa fa-search" id="icon-search"></i>Empresa</a></li>
 		</ul>
-
 	</section>
 
 	<div id="ctn-cover-search">
@@ -109,11 +107,9 @@
 					especializada en la construcción
 					tradicional y en seco.</h1>
 			</div>
-
 			<div id="MenuNavBottom">
 				<h1>MENÚ</h1>
 				<nav>
-
 					<ul>
 						<li>
 							<a href="index.html" title="Inicio">Inicio</a>
@@ -156,13 +152,23 @@
 				</ul>
 			</div>
 		</section>
+
 		<section class="ContainerCopyRight">
 			<p>Copyright © 2020 MR Construcciones. Todos los derechos reservados.</p>
 		</section>
 
 	</footer>
-	<script src="https://kit.fontawesome.com/36872236e1.js"></script>
-	<script src="Js/Script.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 700,
+			once: true,
+		});
+	</script>
+	
 </body>
 
 </html>

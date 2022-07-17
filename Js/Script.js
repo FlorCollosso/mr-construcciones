@@ -96,11 +96,11 @@ window.addEventListener('scroll', mostrarScroll);
 
 //La página vuelve al inicio cuando recarga
 
-//$(window).on('beforeunload', function() {
-  //window.setTimeout(function() {
-   //$(window).scrollTop(0); 
-//}, 0);
-//});
+$(window).on('beforeunload', function() {
+  window.setTimeout(function() {
+   $(window).scrollTop(0); 
+}, 0);
+});
 
 //Botón Enviar
 
@@ -121,3 +121,14 @@ boton.addEventListener('click', function(e) {
   }
   this.classList.toggle('boton__circulo');
 });
+
+//Scroll a sección Contacto
+
+const linkContacto = document.getElementById("cp");
+
+linkContacto.addEventListener('click', () => {
+  window.scrollTo({top: document.body.scrollHeight - 1095, behavior: "auto"});
+  // window.scrollTo(0, document.body.scrollHeight - 1095);
+});
+
+
