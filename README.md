@@ -4,6 +4,5 @@ En este repositorio podés encontrar el código fuente de mi primer página web,
 
 ### Herramientas:
 ----------------
-- [Font Awesome]: https://fontawesome.com/
-- [AOS]: https://michalsnik.github.io/aos/
-
+- <a href="https://fontawesome.com/">Font Awesome</a>
+- <a href="https://michalsnik.github.io/aos/">AOS</a>
