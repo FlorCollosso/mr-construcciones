@@ -1,7 +1,7 @@
 # MRConstrucciones
 
 En este repositorio se encuentra el código fuente de mi primer página web, desarrollada para la constructora MR Construcciones.
-Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) Para acceder a la web. 
+Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) para acceder a la web. 
 
 ## Herramientas:
 
