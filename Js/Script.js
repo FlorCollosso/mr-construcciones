@@ -1,5 +1,3 @@
-
-
 //Buscador de Contenido
 
 //Ejecutando Funciones
