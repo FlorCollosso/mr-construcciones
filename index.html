@@ -105,16 +105,15 @@
 
 			<section class="containerSobreNosotros" id="contacto">
 				<div data-aos="fade-left" class="containerNosotros">	
-					<div>
+					<div class="divNosotros">
+						<img src="img/nosotros_img.png" id="imgTextoNosotros">
 						<div class="divTextoNosotros">
-							<hr id="hrAnimacion">
 							<div>
 								<h2>QUIENES SOMOS</h2>
 								<h3>EXPERIENCIA Y CONOCIMIENTO EN LA CONSTRUCCIÓN</h3>
-								<p>MR Construcciones es una empresa referente en la industria nacional de la construcción de obras ferroviarias, civiles, electromecánicas y medioambientales.Desde nuestros inicios en 1974 desarrollamos servicios integrando conocimiento y experiencia. Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.</p>
+								<p>MR Obras es una empresa referente en la industria nacional de la construcción de obras ferroviarias, civiles, electromecánicas y medioambientales.Desde nuestros inicios en 1974 desarrollamos servicios integrando conocimiento y experiencia. Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.</p>
 							</div>
 						</div>
-						<img src="img/nosotros_texto.jpg" id="imgTextoNosotros">
 					</div>
 				</div>
 				<div class="containerPorQueElegirnos">
@@ -125,7 +124,7 @@
 							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" id="divRapidez" class="animacion">
 								<img src="img/rapidez.png" class="valoresImg">
 								<div class="valoresTexto">
-									<h3>RAPIDEZ</h3>
+									<h3>Rapidez</h3>
 									<p>Nos comprometemos con cada uno de nuestros clientes desde el comienzo hasta el final de la obra.</p>
 								</div>
 							</div>
@@ -134,7 +133,7 @@
 							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700" id="divRapidez" >
 								<img src="img/compromiso.png" class="valoresImg">
 								<div class="valoresTexto">
-									<h3>SERIEDAD</h3>
+									<h3>Seriedad</h3>
 									<p>Nos comprometemos con el trabajos asumiendo y resolviendo las consecuencias derivadas
 										de cada una de las acciones.</p>
 								</div>
@@ -144,7 +143,7 @@
 							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900" id="divRapidez" >
 								<img src="img/calidad.png" class="valoresImg">
 								<div class="valoresTexto">
-									<h3>CALIDAD</h3>
+									<h3>Calidad</h3>
 									<p>Utilizamos materiales de calidad y empleamos mano de obra capacitada para lograr
 										terminaciones de primer nivel.</p>
 								</div>
@@ -154,7 +153,7 @@
 							<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" id="divRapidez" >
 								<img src="img/experiencia.png" class="valoresImg">
 								<div class="valoresTexto">
-									<h3>EXPERIENCIA</h3>
+									<h3>Experiencia</h3>
 									<p>Tenemos un amplio conocimiento y más de 15 años de experiencia comprobable en el
 										rubro de la construcción.</p>
 								</div>
@@ -173,9 +172,10 @@
 						<div>
 							<h2>NUESTRA VISIÓN</h2>
 							<h3>EXPERIENCIA Y CONOCIMIENTO EN LA CONSTRUCCIÓN</h3>
-							<p>MR Construcciones es una empresa referente en la industria nacional de la construcción de obras ferroviarias, civiles, electromecánicas y medioambientales.Desde nuestros inicios en 1974 desarrollamos servicios integrando conocimiento y experiencia. Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.Conformamos una estructura sólida basada en nuestros integrantes y equipo especializado.</p>
+							<p>Convertirnos en una de las empresas líderes en la industria de construcción a nivel nacional, con las mejores ofertas y un servicio de calidad que supere las expectativas más altas. 
+								Hacernos reconocidos como una empresa confiable, organizada, competitiva, con altos estándares de calidad y que brinda el mejor trato a sus clientes.</p>
 						</div>
-						<img src="img/3D_character.png" alt="">
+						<img src="img/vision_img.png" alt="">
 					</div>
 				</div>
 			</section>
@@ -199,6 +199,7 @@
 					</div>
 					<div data-aos="zoom-in" data-aos- data-aos-duration="700" class="imgServInicio">
 						<img src="img/construccion_en_seco.jpg">
+						<div>Construcción en Seco</div>
 						<div class="detalles">
 							<h3>Construcción en Seco</h3>
 							<p>The strength to change what I can, the inability to accept what I can't and the
@@ -297,33 +298,36 @@
 
 			<section class="containerContacto">
 				<section>
-					<div class="tituloContacto">
-							<h4>Contactanos</h4>
-					</div>
-					<form>
-						<fieldset>
-							<div class="textoContacto">
-								<label for="nombre"></label>
-								<input type="text" name="nombre" placeholder="Nombre completo y apellido" />
+					<div class="divForm">
+						<form>
+							<div class="tituloContacto">
+								<h4>Contactanos</h4>
 							</div>
-							<div class="textoContacto">
-								<label for="telefono"></label>
-								<input type="text" name="celular" placeholder="Teléfono" />
-							</div>
-							<div class="textoContacto">
-								<label for="email"></label>
-								<input type="text" name="email" placeholder="Email" />
-							</div>
-							<div class="textoContacto" id="inputMensaje">
-								<textarea name="Message" id="message" rows="5" placeholder="Dejanos tus pregutnas acá..."></textarea>
-							</div>
-							<div class="boton">
-								<div class="containerBoton">
-									<div class="tick" type="submit" value="Enviar">Enviar</div>
+							<fieldset>
+								<div class="textoContacto">
+									<label for="nombre"></label>
+									<input type="text" name="nombre" placeholder="Nombre completo y apellido" />
 								</div>
-							</div>
-						</fieldset>
-					</form>
+								<div class="textoContacto">
+									<label for="telefono"></label>
+									<input type="text" name="celular" placeholder="Teléfono" />
+								</div>
+								<div class="textoContacto">
+									<label for="email"></label>
+									<input type="text" name="email" placeholder="Email" />
+								</div>
+								<div class="textoContacto" id="inputMensaje">
+									<textarea name="Message" id="message" rows="5" placeholder="Mensaje"></textarea>
+								</div>
+								<div class="boton">
+									<div class="containerBoton">
+										<div class="tick" type="submit" value="Enviar">Enviar</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+						<img src="img/contacto_img.png" alt="" id="imgContacto">
+					</div>
 					<section class="mapa">
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13625.032973094914!2d-62.838231799999996!3d-31.37944215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943355f10607e15b%3A0x9aaf9d443a909c22!2zOSBkZSBKdWxpbywgRWwgVMOtbywgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1604291433998!5m2!1ses-419!2sar"></iframe>
@@ -338,7 +342,8 @@
 	<footer>
 
 		<section class="containerCopyRight">
-			<p>Copyright © 2020 MR Construcciones. Todos los derechos reservados.</p>
+			<img src="img/MRLogo.png" alt="">
+			<p>Copyright © 2020 MR Obras. Todos los derechos reservados.</p>
 		</section>
 
 	</footer>

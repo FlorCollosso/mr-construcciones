@@ -78,19 +78,19 @@ document.getElementById("divRapidez").addEventListener("mouseenter", () => {
 
 });
 
-//Animación de la sección Nosotros
+// //Animación de la sección Nosotros
 
-let hrAnimado = document.getElementById("hrAnimacion");
+// let hrAnimado = document.getElementById("hrAnimacion");
 
-function mostrarScroll() {
-  let scrollTop = document.documentElement.scrollTop;
-  let alturaHrAnimado = hrAnimado.offsetTop;
-  if (alturaHrAnimado + 200 < scrollTop) {
-    hrAnimado.classList.add("hrAnimacion")
-  }
-}
+// function mostrarScroll() {
+//   let scrollTop = document.documentElement.scrollTop;
+//   let alturaHrAnimado = hrAnimado.offsetTop;
+//   if (alturaHrAnimado + 200 < scrollTop) {
+//     hrAnimado.classList.add("hrAnimacion")
+//   }
+// }
 
-window.addEventListener('scroll', mostrarScroll);
+// window.addEventListener('scroll', mostrarScroll);
 
 //La página vuelve al inicio cuando recarga
 
