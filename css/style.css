@@ -18,13 +18,11 @@
   background-color: var(--hueso);
   color: #000;
   font-family: Helvetica;
-  overflow: overlay;
  }
 
  main {
   overflow: hidden;
   max-height: 333.8vw;
-  min-width: 100%;
  }
 
  li {
@@ -55,12 +53,7 @@
 /* scroll */
 
 *::-webkit-scrollbar {
-  width: .6vw;
-}
-
-*::-webkit-scrollbar-thumb {        
-  background: rgba(0, 0, 0, .5);
-  border-radius: 10px;
+  display: none;
 }
 
 /* Logo Navegador */
@@ -403,14 +396,14 @@ align-items: center;
   color: #000;
   text-align: left;
   position: relative;
-  top: -1vw;
   left: -19vw;
-  padding: 0  100px 40px 150px;
+  padding: 0 100px 35px 150px;
   z-index: 1;
   -webkit-box-shadow: -10px -5px 60px -25px rgba(0,0,0,0.3);
   -moz-box-shadow: -10px -5px 60px -25px rgba(0,0,0,0.3);
   box-shadow: -10px -5px 60px -25px rgba(0,0,0,0.3);
   background: url(../img/img-noise.png);
+  background-size: cover;
   border-radius: 0px 50px 50px 0px;
 }
 
@@ -428,7 +421,6 @@ align-items: center;
 
 .containerNosotros h2 {
   font-weight: bold; 
-  font-size: 2rem; 
   background: var(--verdePantano); 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
@@ -438,13 +430,12 @@ align-items: center;
   font-family: 'Poppins', sans-serif;
   font-size: 3.5vw;
   position: relative;
-  top: 1vw;
-  padding-bottom: .5vw;
+  top: 10px;
 }
 
 .containerNosotros h3 {
   color: var(--grisMedio);
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
@@ -457,8 +448,10 @@ align-items: center;
   color: var(--grisMedio);
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1vw;
 }
+
+/* Valores */
 
 .containerPorQueElegirnos {
   margin-top: 3vw;
@@ -482,7 +475,7 @@ align-items: center;
 .containerPorQueElegirnos h3 {
   color: #8b8b8b;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 2vw;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -575,7 +568,6 @@ align-items: center;
 
 .containerVision h2 {
   font-weight: bold; 
-  font-size: 2rem; 
   background: var(--verdePantano); 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
@@ -585,13 +577,12 @@ align-items: center;
   font-family: 'Poppins', sans-serif;
   font-size: 3.5vw;
   position: relative;
-  top: 1vw;
-  padding-bottom: .5vw;
+  top: 10px;
 }
 
 .containerVision h3 {
   color: var(--grisMedio);
-  font-size: 1.3rem;
+  font-size: 1.2vw;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
@@ -604,11 +595,11 @@ align-items: center;
   color: var(--grisMedio);
   letter-spacing: 2px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1vw;
 }
 
 .containerVision div {
-  height: 21vw;
+  height: 18vw;
 }
 
 .divTextoVision {
@@ -617,19 +608,20 @@ align-items: center;
   color: #000;
   text-align: left;
   position: relative;
-  top: -5.5vw;
+  top: -4vw;
   z-index: 2;
 }
 
 .divTextoVision div {
   width: 50vw;
-  padding: 40px 200px 5px 100px;
+  padding: 30px 200px 10px 80px;
   position: relative;
   left: 15vw;
   -webkit-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.3);
   background: url(../img/img-noise.png);
+  background-size: cover;
   border-radius: 50px;
 }
 
@@ -709,13 +701,6 @@ align-items: center;
   text-align: center;
 }
 
-.containerServicios hr {
-  margin-top: 1.5vw;
-  height: .05vw;
-  border: none;
-  background: #a9bab6;
-}
-
 .imgServInicio .detalles {
   position: absolute;
   display: inline;
@@ -791,7 +776,7 @@ align-items: center;
 
 .containerProyectos h2 {
   font-weight: bold; 
-  font-size: 3vw; 
+  font-size: 3.5vw; 
   background: var(--verdePantano); 
   -webkit-background-clip: text; 
   -moz-background-clip: text; 
@@ -799,7 +784,6 @@ align-items: center;
   color: transparent; 
   text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
   font-family: 'Poppins', sans-serif;
-  font-size: 4rem;
   position: relative;
   top: -3vw;
 }
@@ -843,7 +827,7 @@ align-items: center;
 .containerProyectos h4 {
   position: relative;
   color: var(--hueso);
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 200;
   letter-spacing: 1px;
   background: rgba(0, 0, 0, .8);
@@ -889,7 +873,7 @@ align-items: center;
 
 .fa-plus-circle {
   position: relative;
-  bottom: 155%;
+  bottom: 79vw;
   opacity: 0;
   color: #5fd7bf;
   background: rgb(251,251,251);
@@ -1045,4 +1029,171 @@ footer img {
 .containerCopyRight {
   text-align: center;
   font-size: smaller;
+}
+
+/* Default screen size (1440-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    
+  .header {
+    grid-template-columns: 60% auto;
+    height: 4.5vw;
+  }
+
+  main {
+    overflow: hidden;
+    max-height: 339vw;
+   }
+  
+  /* Logo Navegador */
+  
+  .logoTop {
+    padding-left: 11.7vw;
+    height: 5vw;
+    margin-top: 0.5vw;
+  }
+  
+  .logoTop img {
+    width: 6.5vw;
+  }
+  
+  /* Buscador */
+  
+  #ctn-cover-search {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 4vw;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: none;
+    z-index: 4;
+  }
+
+  /* Redes Flotantes*/
+
+  .socialBar {
+    top: 35%;
+  }
+  
+  /* Nosotros */
+  
+  .divTextoNosotros {
+    padding: 0  100px 30px 150px;
+  }
+  
+  .containerNosotros h2 {
+    font-size: 3.3vw;
+  }  
+  
+  .containerNosotros p {
+    font-size: 1rem;
+  }
+
+  /* Valores */
+  
+  .containerPorQueElegirnos {
+    margin-top: 4vw;
+  }
+  
+  .containerValores p {
+    font-size: .8rem;
+  }
+  
+  .valoresImg:hover {
+    box-shadow: -0.1px 150px 0px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valoresImg:hover + .valoresTexto {
+    padding-top: 1vw;
+  }
+  
+  /* Visión */
+  
+  .containerVision h2 {
+    font-size: 3.2vw;
+  }
+  
+  .containerVision h3 {
+    font-size: 1.5vw;
+  }
+  
+  .containerVision p {
+    font-size: 1.1vw;
+  }
+  
+  .containerVision div {
+    height: 20vw;
+  }
+  
+  .divTextoVision div {
+    padding: 30px 200px 0 80px;
+    position: relative;
+  }
+  
+  /* Servicios */
+  
+  .containerServicios h3 {
+    padding: 1.5vw 0 0 1.5vw;
+  }
+  
+  .containerServicios p {
+    width: 17vw;
+    padding: .5vw 1.5vw;
+    font-size: 1vw;
+  }
+  
+  .botonVerMas {
+    width: 5.3vw;
+    margin: .3vw 1.5vw;
+    font-size: 1vw;
+  }
+  
+  /* Proyectos */
+  
+  .containerProyectos h4 {
+    font-size: 1.4vw;
+  }
+  
+  /* Contacto */
+  
+  .containerContacto {
+    height: 65vw;
+  }
+  
+  #imgContacto {
+    bottom: -13.8vw;
+  }
+  
+  .boton {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px
+  }
+  
+  .boton__circulo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+
+}
+
+/* Tablet size (768-480) */
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+
+  
+}
+
+/* Phone size (480-menos ) */
+
+@media all and (max-width: 480px) { 
+
+  
 }
