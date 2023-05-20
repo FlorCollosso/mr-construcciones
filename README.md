@@ -1,6 +1,6 @@
 # 🧱 MRConstrucciones
 
-![GitHub Release Date](https://img.shields.io/github/release-date/FlorCollosso/MRConstrucciones) ![Respo Size](https://img.shields.io/github/repo-size/FlorCollosso/MRConstrucciones?color=orange) ![Last commit](https://img.shields.io/github/last-commit/FlorCollosso/MRConstrucciones)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/FlorCollosso/MRConstrucciones) ![Respo Size](https://img.shields.io/github/repo-size/FlorCollosso/MRConstrucciones?color=orange) ![Last commit](https://img.shields.io/github/last-commit/FlorCollosso/MRConstrucciones)
 
 En este repositorio se encuentra el código fuente de mi primer página web, desarrollada para la constructora MR Construcciones.
 Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) para acceder a la web. 
@@ -12,7 +12,9 @@ Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) par
 
 ## 📸 Capturas
 
-![Captura de pantalla 1](https://drive.google.com/file/d/1HXeOyj8V0vLYWQSgKgSq8WcMxw-BomyR/view?usp=share_link)
+![Captura de pantalla](https://github.com/FlorCollosso/Portfolio-FrontEnd/blob/main/src/assets/img/Home01.jpg?raw=true)
+
+![Captura de pantalla](https://github.com/FlorCollosso/Portfolio-FrontEnd/blob/main/src/assets/img/Home02.jpg?raw=true)
 
 ## 📩 Contacto
 
