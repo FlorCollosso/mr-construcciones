@@ -12,7 +12,7 @@ Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) par
 
 ## 📸 Capturas
 
-![Captura de pantalla 1](https://photos.google.com/album/AF1QipNw9RadvoAydN--KHoroE5JqAUN1yKmUzuRZadd/photo/AF1QipPzkVELnVTKTXsJhwu68_aiQdKFu6vcR60Ah2R1)
+![Captura de pantalla 1](https://drive.google.com/file/d/1HXeOyj8V0vLYWQSgKgSq8WcMxw-BomyR/view?usp=share_link)
 
 ## 📩 Contacto
 
