@@ -3,7 +3,7 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/FlorCollosso/MRConstrucciones) ![Respo Size](https://img.shields.io/github/repo-size/FlorCollosso/MRConstrucciones?color=orange) ![Last commit](https://img.shields.io/github/last-commit/FlorCollosso/MRConstrucciones)
 
 En este repositorio se encuentra el código fuente de mi primer página web, desarrollada para la constructora MR Construcciones.
-Podés hacer [click aquí](https://florcollosso.github.io/MRConstrucciones/) para acceder a la web. 
+Podés hacer [click aquí](https://florcollosso.github.io/mr-construcciones/) para acceder a la web. 
 
 ## 🛠 Herramientas:
 
